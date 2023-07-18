@@ -1,27 +1,46 @@
-# CountryApp
+<p align="center">
+  <a href="https://www.angular.io/" target="blank"><img src="https://angular.io/assets/images/logos/angular/angular.svg" width="200" alt="Angular Logo"/></a>
+</p>
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.1.1.
+# Países App
 
-## Development server
+Aplicación que te permite buscar Países por Capital, por País o por Región.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+La página principal está dividida en dos secciones, la sección de la izquierda te permite seleccionar el tipo de búsqueda, ya sea por **Capital**, **País** o **Región**.
 
-## Code scaffolding
+En la parte superior de la sección derecha se encuentra el buscador, donde podrás escribir tu consulta. y en la parte inferior de dicha sección aparecerá el listado de coincidencias de tu búsqueda.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+Cada una de las coincidencias tiene un enlace, el cual te permitirá abrir información extra sobre el país que estás seleccionando.
 
-## Build
+La información de las búsquedas y los resultados de las mismas, son persistentes, ya que se guardan en el LocalStorage, por lo que si cambias de pagina o reinicias el navegador, la información de tus últimas búsquedas estarán disponibles.
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+La App se conecta a la API [REST Countries](https://restcountries.com/) mediante peticiones HTTP.
 
-## Running unit tests
+Algunos conceptos utilizados para la generación de ésta App, son:
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+* SPA (Single Page Application).
+* Rutas.
+* RouterLink y RouterLinkActive.
+* Componentes especializados.
+* DebounceTime.
+* Inputs.
+* SwitchMaps.
+* Consumo de APIs.
+* Tipado de datos.
+* Menú de aplicación.
+* Pipes.
+* Operadores RXjs.
+* ngClass y diferentes formas de manipular clases.
+* CSS condicionales.
+* Optimizaciones a peticiones HTT.
+* Debounce manual mediante RxJs.
+* LocalStorage.
+* Ideas de Store.
+* Re-utilización de componentes.
+* Varios operadores de RxJS aplicados.
 
-## Running end-to-end tests
+Este proyecto fue generado con [Angular CLI](https://github.com/angular/angular-cli) versión 16.1.1.
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+## Servidor de Desarrollo
 
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+Ejecuta `ng serve` para generar un servidor de desarrollo. Navega a `http://localhost:4200/`. La aplicación se recargará automáticamente si cambia alguno de los archivos de origen.
